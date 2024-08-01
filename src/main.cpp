@@ -1,10 +1,10 @@
-#include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
 #include <ostream>
 using namespace std;
 
-int main () {
+int main() {
   cout << endl;
   cout << "Guess the number! You have 3 attempts!" << endl;
   cout << "The Secret Number is between 1-10!" << endl;
@@ -16,7 +16,7 @@ int main () {
       cout << endl << endl << "You lost! Try again next Time! )-: ";
       break;
     };
-    cout << endl << attempt <<". Attempt!" << endl;
+    cout << endl << attempt << ". Attempt!" << endl;
     int guess;
     cout << "Type your Guess: ";
     cin >> guess;
@@ -26,7 +26,8 @@ int main () {
       break;
     } else {
       int attmpleft = 4 - attempt;
-      cout << endl << "Aww, Dang it! You have " << attmpleft << " Try(s) left!" << endl;
+      cout << endl
+           << "Aww, Dang it! You have " << attmpleft << " Try(s) left!" << endl;
     };
   };
   cout << endl;
